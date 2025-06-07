@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "type": "module",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "answer": "node --env-file=.env --watch server.js",
+    "embed": "node --env-file=.env --watch generateEmbeddings.js",
+    "ask": "node --env-file=.env --watch askQuestion.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@langchain/community": "^0.3.41",
+    "@langchain/core": "^0.3.48",
+    "@langchain/openai": "^0.5.7",
+    "@langchain/textsplitters": "^0.1.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "faiss-node": "^0.5.1",
+    "langchain": "^0.3.21",
+    "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.17"
+  }
+}
